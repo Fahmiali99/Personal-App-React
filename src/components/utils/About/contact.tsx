@@ -31,11 +31,6 @@ export const contact = [
         title: "Linkedin",
         href: "https://linkedin.com/in/fahmialihusni/",
       },
-      {
-        id: 6,
-        title: "Spotify",
-        href: "https://open.spotify.com/user/xa0c9m7olx3ucvbyp2atz2t78",
-      },
     ],
   },
 ];

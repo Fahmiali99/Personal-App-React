@@ -6,6 +6,9 @@ import Navbar from "./components/common/Navbar";
 
 import Footer from "./components/common/Footer";
 import Home from "./components/pages/home";
+import About from "./components/pages/about";
+import Portfolio from "./components/pages/portfolio";
+import Resume from "./components/pages/resume";
 
 function App() {
   const [navbar, setNavbar] = useState(false);
@@ -39,15 +42,12 @@ function App() {
               bright={bright}
               navbar={navbar}
             />
+
             <Routes>
-              <Route path="/" element={<Home bright={bright} />} />
-              {/* <Route path="/" element={<Home bright={bright} />} /> */}
-              {/* <Route path="/about" element={<About bright={bright} />} />
-                <Route
-                  path="/portfolio"
-                  element={<Portfolio bright={bright} />}
-                />
-                <Route path="/resume" element={<Resume />} /> */}
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
             </Routes>
             <Footer />
           </div>

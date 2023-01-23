@@ -1,10 +1,10 @@
 import React from "react";
 import { data } from "../../utils/Portfolio/data";
 
-function Portfolio({ bright }) {
+function Portfolio() {
   return (
     <div>
-      <div className="pt-28 pb-4 w-full  xl:min-h-[calc(100vh-3rem)] px-2 md:px-0">
+      <div className="pt-12 pb-4 w-full  xl:min-h-[calc(100vh-3rem)] px-2 md:px-0">
         <div>
           <h1 className="text-2xl font-semibold">Portfolio</h1>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-4 my-5 ">
@@ -18,14 +18,7 @@ function Portfolio({ bright }) {
                 substring = substring.substring(0, maxLength) + "...";
               }
               return (
-                <div
-                  key={idx}
-                  className={`${
-                    bright
-                      ? "border border-gray-700 rounded-lg shadow-md"
-                      : "border border-gray-200 rounded-lg shadow-md"
-                  }`}
-                >
+                <div key={idx} className=" rounded-lg shadow-md">
                   <div
                     className={`w-full  dark:bg-gray-800 dark:border-gray-700 `}
                   >
@@ -40,19 +33,13 @@ function Portfolio({ bright }) {
                           alt=""
                         />
                       </div>
-                      <div
-                        className={`${
-                          bright
-                            ? " bg-slate-800 text-white rounded rounded-b-lg"
-                            : "bg-white rounded rounded-b-lg"
-                        }`}
-                      >
+                      <div className="bg-white rounded rounded-b-lg">
                         <div className="p-5 ">
-                          <h5 className="mb-2 text-2xl font-bold tracking-tight  dark:text-white">
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight  text-black">
                             {item.title}
                           </h5>
 
-                          <p className="mb-3 font-normal  dark:text-gray-400">
+                          <p className="mb-3 font-normal  text-gray-400">
                             {substring}
                           </p>
 
@@ -63,7 +50,9 @@ function Portfolio({ bright }) {
                                   key={idx}
                                   className=" mr-1 py-0.5 rounded border shadow-md ..."
                                 >
-                                  <p className="mx-2 text-xs">{item.title}</p>
+                                  <p className="mx-2 text-xs text-black">
+                                    {item.title}
+                                  </p>
                                 </div>
                               );
                             })}

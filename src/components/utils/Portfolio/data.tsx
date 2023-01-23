@@ -87,7 +87,7 @@ export const data = [
     id: 4,
     title: "Booklogia",
     story:
-      "A book review platform that serves as a gathering place for book enthusiasts seeking new readings for their collections.",
+      "A book review platform that serves as a gathering place for seeking new readings for their collections.",
     href: "https://booklogia.vercel.app/",
     image: booklogia,
     technology: [

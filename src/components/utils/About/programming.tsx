@@ -1,93 +1,52 @@
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiArduino, SiTailwindcss, SiChakraui } from "react-icons/si";
-import {
-  DiJavascript1,
-  DiPhp,
-  DiJava,
-  DiPython,
-  DiReact,
-  DiLaravel,
-  DiAngularSimple,
-  DiCss3Full,
-  DiBootstrap,
-} from "react-icons/di";
-
-import { FaVuejs } from "react-icons/fa";
-
 export const programming = [
   {
     id: 1,
     title: "JavaScript",
-    Icons: DiJavascript1,
+    icon: "fa-brands fa-js",
   },
   {
     id: 2,
     title: "PHP",
-    Icons: DiPhp,
+    icon: "fa-brands fa-php",
   },
   {
     id: 3,
     title: "Java",
-    Icons: DiJava,
+    icon: "fa-brands fa-java",
   },
   {
     id: 4,
     title: "Python",
-    Icons: DiPython,
+    icon: "fa-brands fa-python",
   },
   {
     id: 5,
-    title: "Arduino",
-    Icons: SiArduino,
+    title: "C/C++",
+    icon: "fa-brands fa-c",
   },
   {
     id: 6,
     title: "React JS",
-    Icons: DiReact,
+    icon: "fa-brands fa-react",
   },
   {
     id: 7,
     title: "Next JS",
-    Icons: TbBrandNextjs,
+    icon: "fa-brands fa-n",
   },
   {
     id: 8,
     title: "Laravel",
-    Icons: DiLaravel,
+    icon: "fa-brands fa-laravel",
   },
   {
     id: 9,
     title: "Angular JS",
-    Icons: DiAngularSimple,
+    icon: "fa-brands fa-angular",
   },
   {
     id: 10,
     title: "Vue JS",
-    Icons: FaVuejs,
-  },
-  {
-    id: 11,
-    title: "CSS",
-    Icons: DiCss3Full,
-  },
-  {
-    id: 12,
-    title: "Bootstrap",
-    Icons: DiBootstrap,
-  },
-  {
-    id: 13,
-    title: "Tailwind CSS",
-    Icons: SiTailwindcss,
-  },
-  {
-    id: 14,
-    title: "React Bootstrap",
-    Icons: DiBootstrap,
-  },
-  {
-    id: 15,
-    title: "Chakra",
-    Icons: SiChakraui,
+    icon: "fa-brands fa-vuejs",
   },
 ];

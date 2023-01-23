@@ -1,10 +1,6 @@
 import React from "react";
 
-interface HomeProps {
-  bright: boolean;
-}
-
-function Home({ bright }: HomeProps) {
+function Home() {
   function openWindow() {
     window.open("/resume");
   }
