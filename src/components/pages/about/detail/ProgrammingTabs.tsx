@@ -5,7 +5,7 @@ import Programming from "../components/Programming";
 function ProgrammingTabs() {
   return (
     <div>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 ">
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 py-4">
         {programming.map((item, idx) => {
           return (
             <div key={idx} className="border border-gray-500 rounded-lg p-3">

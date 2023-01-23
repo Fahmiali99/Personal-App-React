@@ -7,7 +7,7 @@ import ProgrammingTabs from "./detail/ProgrammingTabs";
 function About() {
   return (
     <div>
-      <div className=" pb-4 w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
+      <div className=" w-full h-full min-h-[calc(100vh-3rem)] px-2 md:px-0">
         <div className="pt-20">
           <div className="block items-center">
             {about.map((item, idx) => {
@@ -17,7 +17,7 @@ function About() {
                   <div className=" flex justify-center">
                     <img src={fahmi} alt="" width={200} />
                   </div>
-                  <div className=" flex justify-center py-5"></div>
+
                   <div>
                     <h1 className="text-2xl sm:text-3xl font-medium">
                       {item.title}
@@ -27,18 +27,18 @@ function About() {
                         key={idx}
                         className="text-justify text-base md:text-lg"
                       >
-                        <p className="py-1">{item.subAbout}</p>
+                        <p className="py-2">{item.subAbout}</p>
                       </div>
                     ))}
                   </div>
                 </div>
               );
             })}
-            <div className="skill pb-5">
-              <h1 className="text-2xl sm:text-3xl font-medium py-1"> Skill </h1>
+            <div className="skill ">
+              <h1 className="text-2xl sm:text-3xl font-medium py-1 ">Skill</h1>
               <ProgrammingTabs />
             </div>
-            <div className="text-justify">
+            <div className="contact text-justify">
               {contact.map((item, idx) => {
                 const subContact = item.contact;
                 return (
@@ -46,7 +46,7 @@ function About() {
                     <h1 className="text-2xl sm:text-3xl font-medium">
                       {item.title}
                     </h1>
-                    <p className="py-1 text-base md:text-lg">{item.about}</p>
+                    <p className=" py-1 text-base md:text-lg">{item.about}</p>
                     <div>
                       {subContact.map((item, idx) => {
                         return (
