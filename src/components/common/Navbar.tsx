@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../utils/navbar";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
+import gambar from "../../assets/rusume.png"
 
 interface NavigationProps {
   toggleMenu: () => void;
